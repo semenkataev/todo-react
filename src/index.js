@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+import "./index.css";
+import registerServiceWorker from "./registerServiceWorker";
 
-import { Provider } from 'mobx-react';
-import TodoStore from './stores/TodoStore';
+import { Provider } from "mobx-react";
+import TodoStore from "./stores/TodoStore";
 
 const Root = (
   <Provider TodoStore={TodoStore}>
@@ -13,5 +13,5 @@ const Root = (
   </Provider>
 );
 
-ReactDOM.render(Root, document.getElementById('root'));
+ReactDOM.render(Root, document.getElementById("main"));
 registerServiceWorker();
